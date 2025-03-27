@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的学习博客</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #34495e;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+        nav a:hover {
+            background: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .post {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+        .post h2 {
+            color: #2c3e50;
+        }
+        .post-meta {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #ecf0f1;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>我的学习笔记</h1>
+    </header>
+    <nav>
+        <a href="#">首页</a>
+        <a href="#">分类</a>
+        <a href="#">关于</a>
+    </nav>
+    <div class="container">
+        <article class="post">
+            <h2>JavaScript闭包学习笔记</h2>
+            <div class="post-meta">发布于: 2025-03-25 | 标签: JavaScript, 前端</div>
+            <p>闭包是JavaScript中一个重要的概念，它允许函数访问并操作函数外部的变量...</p>
+            <a href="#">阅读更多</a>
+        </article>
+        <article class="post">
+            <h2>CSS Flexbox布局指南</h2>
+            <div class="post-meta">发布于: 2025-03-20 | 标签: CSS, 前端</div>
+            <p>Flexbox是一种强大的CSS布局模式，它提供了更加有效的方式来布局、对齐和分配容器中项目的空间...</p>
+            <a href="#">阅读更多</a>
+        </article>
+    </div>
+    <footer>
+        <p>© 2025 我的学习博客. 保留所有权利.</p>
+    </footer>
+</body>
+</html>

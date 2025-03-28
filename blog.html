@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的学习空间 - 博客</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">我的学习空间</div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> 首页</a></li>
+                <li class="active"><a href="blog.html"><i class="fas fa-blog"></i> 博客</a></li>
+                <li><a href="notes.html"><i class="fas fa-book"></i> 学习笔记</a></li>
+                <li><a href="projects.html"><i class="fas fa-code"></i> 项目展示</a></li>
+                <li><a href="resources.html"><i class="fas fa-share-alt"></i> 资源分享</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> 关于我</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="blog-page">
+        <div class="sidebar">
+            <div class="search-box">
+                <input type="text" placeholder="搜索文章...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="categories">
+                <h3><i class="fas fa-folder"></i> 分类</h3>
+                <ul>
+                    <li><a href="#">前端开发 <span>(12)</span></a></li>
+                    <li><a href="#">后端技术 <span>(8)</span></a></li>
+                    <li><a href="#">数据分析 <span>(5)</span></a></li>
+                    <li><a href="#">人工智能 <span>(3)</span></a></li>
+                    <li><a href="#">学习心得 <span>(7)</span></a></li>
+                </ul>
+            </div>
+            
+            <div class="tags">
+                <h3><i class="fas fa-tags"></i> 标签云</h3>
+                <div class="tag-cloud">
+                    <a href="#" class="tag">JavaScript</a>
+                    <a href="#" class="tag">Python</a>
+                    <a href="#" class="tag">React</a>
+                    <a href="#" class="tag">Node.js</a>
+                    <a href="#" class="tag">机器学习</a>
+                    <a href="#" class="tag">CSS</a>
+                    <a href="#" class="tag">HTML</a>
+                    <a href="#" class="tag">Vue</a>
+                    <a href="#" class="tag">数据库</a>
+                    <a href="#" class="tag">算法</a>
+                </div>
+            </div>
+            
+            <div class="archive">
+                <h3><i class="fas fa-archive"></i> 归档</h3>
+                <ul>
+                    <li><a href="#">2023年5月 <span>(5)</span></a></li>
+                    <li><a href="#">2023年4月 <span>(7)</span></a></li>
+                    <li><a href="#">2023年3月 <span>(4)</span></a></li>
+                    <li><a href="#">2023年2月 <span>(3)</span></a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="blog-content">
+            <h1><i class="fas fa-blog"></i> 所有文章</h1>
+            
+            <article class="blog-post" id="post1">
+                <div class="post-header">
+                    <h2>JavaScript ES6新特性详解</h2>
+                    <div class="post-meta">
+                        <span><i class="far fa-calendar-alt"></i> 2023-05-15</span>
+                        <span><i class="far fa-folder"></i> 前端开发</span>
+                        <span><i class="far fa-comments"></i> 5 评论</span>
+                    </div>
+                </div>
+                
+                <div class="post-image" style="background-image: url('https://via.placeholder.com/800x400');"></div>
+                
+                <div class="post-body">
+                    <p>ES6（ECMAScript 2015）是JavaScript语言的重大更新，引入了许多新特性，使JavaScript更加强大和易用。本文将详细介绍ES6中最有用的新特性。</p>
+                    
+                    <h3>1. 箭头函数</h3>
+                    <p>箭头函数提供了一种更简洁的函数写法，并且不绑定自己的this。</p>
+                    <pre><code>// 传统函数
+function add(a, b) {
+    return a + b;
+}
+
+// 箭头函数
+const add = (a, b) => a + b;</code></pre>
+                    
+                    <h3>2. 解构赋值</h3>
+                    <p>解构赋值允许你从数组或对象中提取值到变量中。</p>
+                    <pre><code>// 数组解构
+const [x, y] = [1, 2];
+
+// 对象解构
+const {name, age} = {name: 'Alice', age: 25};</code></pre>
+                    
+                    <p>更多内容...</p>
+                </div>
+                
+                <div class="post-footer">
+                    <div class="post-tags">
+                        <i class="fas fa-tags"></i>
+                        <a href="#" class="tag">JavaScript</a>
+                        <a href="#" class="tag">ES6</a>
+                        <a href="#" class="tag">前端开发</a>
+                    </div>
+                    
+                    <a href="#" class="read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+            
+            <article class="blog-post" id="post2">
+                <div class="post-header">
+                    <h2>Python数据分析入门指南</h2>
+                    <div class="post-meta">
+                        <span><i class="far fa-calendar-alt"></i> 2023-05-10</span>
+                        <span><i class="far fa-folder"></i> 数据分析</span>
+                        <span><i class="far fa-comments"></i> 3 评论</span>
+                    </div>
+                </div>
+                
+                <div class="post-body">
+                    <p>Python是数据分析的强大工具，借助Pandas、NumPy等库，我们可以高效地进行数据处理和分析。</p>
+                    
+                    <h3>1. Pandas基础</h3>
+                    <p>Pandas提供了DataFrame数据结构，非常适合处理表格数据。</p>
+                    <pre><code>import pandas as pd
+
+# 创建DataFrame
+data = {'Name': ['Alice', 'Bob', 'Charlie'],
+        'Age': [25, 30, 35]}
+df = pd.DataFrame(data)</code></pre>
+                    
+                    <h3>2. 数据清洗</h3>
+                    <p>数据分析的第一步通常是清洗数据。</p>
+                    <pre><code># 处理缺失值
+df.fillna(0, inplace=True)
+
+# 删除重复行
+df.drop_duplicates(inplace=True)</code></pre>
+                    
+                    <p>更多内容...</p>
+                </div>
+                
+                <div class="post-footer">
+                    <div class="post-tags">
+                        <i class="fas fa-tags"></i>
+                        <a href="#" class="tag">Python</a>
+                        <a href="#" class="tag">数据分析</a>
+                        <a href="#" class="tag">Pandas</a>
+                    </div>
+                    
+                    <a href="#" class="read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+            
+            <div class="pagination">
+                <a href="#" class="prev"><i class="fas fa-chevron-left"></i> 上一页</a>
+                <a href="#" class="page active">1</a>
+                <a href="#" class="page">2</a>
+                <a href="#" class="page">3</a>
+                <a href="#" class="next">下一页 <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>关于网站</h3>
+                <p>这是我的个人学习空间，记录了我的学习历程和技术分享。</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>快速链接</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> 首页</a></li>
+                    <li><a href="blog.html"><i class="fas fa-blog"></i> 博客</a></li>
+                    <li><a href="notes.html"><i class="fas fa-book"></i> 学习笔记</a></li>
+                    <li><a href="projects.html"><i class="fas fa-code"></i> 项目展示</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>联系我</h3>
+                <ul>
+                    <li><a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i> your.email@example.com</a></li>
+                    <li><a href="https://github.com/yourusername"><i class="fab fa-github"></i> GitHub</a></li>
+                    <li><a href="https://twitter.com/yourusername"><i class="fab fa-twitter"></i> Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 我的学习空间. 保留所有权利.</p>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/tags.js"></script>
+</body>
+</html>

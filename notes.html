@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的学习空间 - 学习笔记</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">我的学习空间</div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> 首页</a></li>
+                <li><a href="blog.html"><i class="fas fa-blog"></i> 博客</a></li>
+                <li class="active"><a href="notes.html"><i class="fas fa-book"></i> 学习笔记</a></li>
+                <li><a href="projects.html"><i class="fas fa-code"></i> 项目展示</a></li>
+                <li><a href="resources.html"><i class="fas fa-share-alt"></i> 资源分享</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> 关于我</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="notes-page">
+        <h1><i class="fas fa-book"></i> 学习笔记</h1>
+        
+        <div class="notes-filter">
+            <div class="search-box">
+                <input type="text" placeholder="搜索笔记...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="filter-options">
+                <select>
+                    <option value="all">所有分类</option>
+                    <option value="frontend">前端开发</option>
+                    <option value="backend">后端技术</option>
+                    <option value="data">数据分析</option>
+                    <option value="ai">人工智能</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="notes-grid">
+            <div class="note-card">
+                <div class="note-header">
+                    <h2>JavaScript核心概念</h2>
+                    <span class="note-category frontend">前端开发</span>
+                </div>
+                <div class="note-content">
+                    <p>JavaScript的执行上下文、作用域链、闭包、原型链等核心概念解析...</p>
+                    <ul class="note-tags">
+                        <li><i class="fas fa-tag"></i> JavaScript</li>
+                        <li><i class="fas fa-tag"></i> 核心概念</li>
+                    </ul>
+                </div>
+                <div class="note-footer">
+                    <span><i class="far fa-calendar-alt"></i> 最后更新: 2023-05-12</span>
+                    <a href="javascript:void(0)" class="btn">查看详情 <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="note-card">
+                <div class="note-header">
+                    <h2>Python数据结构</h2>
+                    <span class="note-category backend">后端技术</span>
+                </div>
+                <div class="note-content">
+                    <p>Python中列表、元组、字典、集合等数据结构的比较和使用场景...</p>
+                    <ul class="note-tags">
+                        <li><i class="fas fa-tag"></i> Python</li>
+                        <li><i class="fas fa-tag"></i> 数据结构</li>
+                    </ul>
+                </div>
+                <div class="note-footer">
+                    <span><i class="far fa-calendar-alt"></i> 最后更新: 2023-05-08</span>
+                    <a href="javascript:void(0)" class="btn">查看详情 <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="note-card">
+                <div class="note-header">
+                    <h2>React Hooks指南</h2>
+                    <span class="note-category frontend">前端开发</span>
+                </div>
+                <div class="note-content">
+                    <p>React Hooks的使用方法和最佳实践，包括useState、useEffect等...</p>
+                    <ul class="note-tags">
+                        <li><i class="fas fa-tag"></i> React</li>
+                        <li><i class="fas fa-tag"></i> Hooks</li>
+                    </ul>
+                </div>
+                <div class="note-footer">
+                    <span><i class="far fa-calendar-alt"></i> 最后更新: 2023-05-05</span>
+                    <a href="javascript:void(0)" class="btn">查看详情 <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="note-card">
+                <div class="note-header">
+                    <h2>SQL基础语法</h2>
+                    <span class="note-category backend">后端技术</span>
+                </div>
+                <div class="note-content">
+                    <p>SQL的基本语法，包括SELECT、INSERT、UPDATE、DELETE等操作...</p>
+                    <ul class="note-tags">
+                        <li><i class="fas fa-tag"></i> SQL</li>
+                        <li><i class="fas fa-tag"></i> 数据库</li>
+                    </ul>
+                </div>
+                <div class="note-footer">
+                    <span><i class="far fa-calendar-alt"></i> 最后更新: 2023-04-28</span>
+                    <a href="javascript:void(0)" class="btn">查看详情 <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="note-card">
+                <div class="note-header">
+                    <h2>Pandas数据处理</h2>
+                    <span class="note-category data">数据分析</span>
+                </div>
+                <div class="note-content">
+                    <p>使用Pandas进行数据清洗、转换和分析的常用方法和技巧...</p>
+                    <ul class="note-tags">
+                        <li><i class="fas fa-tag"></i> Python</li>
+                        <li><i class="fas fa-tag"></i> Pandas</li>
+                    </ul>
+                </div>
+                <div class="note-footer">
+                    <span><i class="far fa-calendar-alt"></i> 最后更新: 2023-04-22</span>
+                    <a href="javascript:void(0)" class="btn">查看详情 <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="note-card">
+                <div class="note-header">
+                    <h2>机器学习基础</h2>
+                    <span class="note-category ai">人工智能</span>
+                </div>
+                <div class="note-content">
+                    <p>机器学习的基本概念、监督学习和无监督学习的区别...</p>
+                    <ul class="note-tags">
+                        <li><i class="fas fa-tag"></i> 机器学习</li>
+                        <li><i class="fas fa-tag"></i> AI</li>
+                    </ul>
+                </div>
+                <div class="note-footer">
+                    <span><i class="far fa-calendar-alt"></i> 最后更新: 2023-04-15</span>
+                    <a href="javascript:void(0)" class="btn">查看详情 <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pagination">
+            <a href="#" class="prev"><i class="fas fa-chevron-left"></i> 上一页</a>
+            <a href="#" class="page active">1</a>
+            <a href="#" class="page">2</a>
+            <a href="#" class="page">3</a>
+            <a href="#" class="next">下一页 <i class="fas fa-chevron-right"></i></a>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>关于网站</h3>
+                <p>这是我的个人学习空间，记录了我的学习历程和技术分享。</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>快速链接</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> 首页</a></li>
+                    <li><a href="blog.html"><i class="fas fa-blog"></i> 博客</a></li>
+                    <li><a href="notes.html"><i class="fas fa-book"></i> 学习笔记</a></li>
+                    <li><a href="projects.html"><i class="fas fa-code"></i> 项目展示</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>联系我</h3>
+                <ul>
+                    <li><a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i> your.email@example.com</a></li>
+                    <li><a href="https://github.com/yourusername"><i class="fab fa-github"></i> GitHub</a></li>
+                    <li><a href="https://twitter.com/yourusername"><i class="fab fa-twitter"></i> Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 我的学习空间. 保留所有权利.</p>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

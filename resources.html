@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的学习空间 - 资源分享</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">我的学习空间</div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> 首页</a></li>
+                <li><a href="blog.html"><i class="fas fa-blog"></i> 博客</a></li>
+                <li><a href="notes.html"><i class="fas fa-book"></i> 学习笔记</a></li>
+                <li><a href="projects.html"><i class="fas fa-code"></i> 项目展示</a></li>
+                <li class="active"><a href="resources.html"><i class="fas fa-share-alt"></i> 资源分享</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> 关于我</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="resources-page">
+        <h1><i class="fas fa-share-alt"></i> 学习资源分享</h1>
+        
+        <div class="resources-tabs">
+            <button class="tab-btn active" data-tab="books">电子书</button>
+            <button class="tab-btn" data-tab="courses">在线课程</button>
+            <button class="tab-btn" data-tab="tools">工具推荐</button>
+            <button class="tab-btn" data-tab="websites">优质网站</button>
+        </div>
+        
+        <div class="tab-content active" id="books">
+            <div class="resource-card">
+                <div class="resource-image">
+                    <img src="https://via.placeholder.com/150x200" alt="Eloquent JavaScript">
+                </div>
+                <div class="resource-info">
+                    <h2>Eloquent JavaScript</h2>
+                    <div class="resource-meta">
+                        <span><i class="fas fa-book"></i> 电子书</span>
+                        <span><i class="fas fa-tag"></i> JavaScript</span>
+                    </div>
+                    <p>一本全面介绍JavaScript编程语言的书籍，从基础到高级概念都有涵盖，适合初学者和有经验的开发者。</p>
+                    <a href="#" class="btn">获取资源 <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            
+            <div class="resource-card">
+                <div class="resource-image">
+                    <img src="https://via.placeholder.com/150x200" alt="Python Crash Course">
+                </div>
+                <div class="resource-info">
+                    <h2>Python Crash Course</h2>
+                    <div class="resource-meta">
+                        <span><i class="fas fa-book"></i> 电子书</span>
+                        <span><i class="fas fa-tag"></i> Python</span>
+                    </div>
+                    <p>快速入门Python编程的实用指南，包含大量练习和项目，帮助读者快速掌握Python核心概念。</p>
+                    <a href="#" class="btn">获取资源 <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            
+            <div class="resource-card">
+                <div class="resource-image">
+                    <img src="https://via.placeholder.com/150x200" alt="Clean Code">
+                </div>
+                <div class="resource-info">
+                    <h2>Clean Code</h2>
+                    <div class="resource-meta">
+                        <span><i class="fas fa-book"></i> 电子书</span>
+                        <span><i class="fas fa-tag"></i> 编程实践</span>
+                    </div>
+                    <p>Robert C. Martin的经典著作，教你如何编写干净、可维护的代码，提升编程技能和代码质量。</p>
+                    <a href="#" class="btn">获取资源 <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="courses">
+            <div class="resource-card">
+                <div class="resource-image">
+                    <img src="https://via.placeholder.com/150x200" alt="The Web Developer Bootcamp">
+                </div>
+                <div class="resource-info">
+                    <h2>The Web Developer Bootcamp</h2>
+                    <div class="resource-meta">
+                        <span><i class="fas fa-video"></i> 在线课程</span>
+                        <span><i class="fas fa-tag"></i> Web开发</span>
+                    </div>
+                    <p>Udemy上的全栈Web开发课程，涵盖HTML、CSS、JavaScript、Node.js等现代Web开发技术。</p>
+                    <a href="#" class="btn">查看课程 <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            
+            <div class="resource-card">
+                <div class="resource-image">
+                    <img src="https://via.placeholder.com/150x200" alt="Machine Learning by Andrew Ng">
+                </div>
+                <div class="resource-info">
+                    <h2>Machine Learning by Andrew Ng</h2>
+                    <div class="resource-meta">
+                        <span><i class="fas fa-video"></i> 在线课程</span>
+                        <span><i class="fas fa-tag"></i> 机器学习</span>
+                    </div>
+                    <p>Coursera上由Andrew Ng教授的机器学习课程，是入门机器学习的最佳选择之一。</p>
+                    <a href="#" class="btn">查看课程 <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="tools">
+            <div class="resource-card">
+                <div class="resource-image">
+                    <img src="https://via.placeholder.com/150x200" alt="Visual Studio Code">
+                </div>
+                <div class="resource-info">
+                    <h2>Visual Studio Code</h2>
+                    <div class="resource-meta">
+                        <span><i class="fas fa-tools"></i> 开发工具</span>
+                        <span><i class="fas fa-tag"></i> 编辑器</span>
+                    </div>
+                    <p>微软开发的轻量级但功能强大的代码编辑器，支持多种编程语言，拥有丰富的扩展生态系统。</p>
+                    <a href="#" class="btn">下载工具 <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            
+            <div class="resource-card">
+                <div class="resource-image">
+                    <img src="https://via.placeholder.com/150x200" alt="Postman">
+                </div>
+                <div class="resource-info">
+                    <h2>Postman</h2>
+                    <div class="resource-meta">
+                        <span><i class="fas fa-tools"></i> 开发工具</span>
+                        <span><i class="fas fa-tag"></i> API测试</span>
+                    </div>
+                    <p>API开发测试工具，可以发送HTTP请求、测试API接口、创建自动化测试等。</p>
+                    <a href="#" class="btn">下载工具 <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="websites">
+            <div class="resource-card">
+                <div class="resource-image">
+                    <img src="https://via.placeholder.com/150x200" alt="MDN Web Docs">
+                </div>
+                <div class="resource-info">
+                    <h2>MDN Web Docs</h2>
+                    <div class="resource-meta">
+                        <span><i class="fas fa-globe"></i> 网站</span>
+                        <span><i class="fas fa-tag"></i> Web开发</span>
+                    </div>
+                    <p>最权威的Web开发文档网站，提供HTML、CSS、JavaScript等技术的详细文档和教程。</p>
+                    <a href="#" class="btn">访问网站 <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            
+            <div class="resource-card">
+                <div class="resource-image">
+                    <img src="https://via.placeholder.com/150x200" alt="Stack Overflow">
+                </div>
+                <div class="resource-info">
+                    <h2>Stack Overflow</h2>
+                    <div class="resource-meta">
+                        <span><i class="fas fa-globe"></i> 网站</span>
+                        <span><i class="fas fa-tag"></i> 问答社区</span>
+                    </div>
+                    <p>全球最大的程序员问答社区，几乎可以找到任何编程问题的解决方案。</p>
+                    <a href="#" class="btn">访问网站 <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>关于网站</h3>
+                <p>这是我的个人学习空间，记录了我的学习历程和技术分享。</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>快速链接</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> 首页</a></li>
+                    <li><a href="blog.html"><i class="fas fa-blog"></i> 博客</a></li>
+                    <li><a href="notes.html"><i class="fas fa-book"></i> 学习笔记</a></li>
+                    <li><a href="projects.html"><i class="fas fa-code"></i> 项目展示</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>联系我</h3>
+                <ul>
+                    <li><a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i> your.email@example.com</a></li>
+                    <li><a href="https://github.com/yourusername"><i class="fab fa-github"></i> GitHub</a></li>
+                    <li><a href="https://twitter.com/yourusername"><i class="fab fa-twitter"></i> Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 我的学习空间. 保留所有权利.</p>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+    <script src="js/tabs.js"></script>
+</body>
+</html>

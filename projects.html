@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的学习空间 - 项目展示</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">我的学习空间</div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> 首页</a></li>
+                <li><a href="blog.html"><i class="fas fa-blog"></i> 博客</a></li>
+                <li><a href="notes.html"><i class="fas fa-book"></i> 学习笔记</a></li>
+                <li class="active"><a href="projects.html"><i class="fas fa-code"></i> 项目展示</a></li>
+                <li><a href="resources.html"><i class="fas fa-share-alt"></i> 资源分享</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> 关于我</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="projects-page">
+        <h1><i class="fas fa-code"></i> 我的项目</h1>
+        
+        <div class="project-filter">
+            <div class="filter-options">
+                <button class="active" data-filter="all">全部</button>
+                <button data-filter="web">Web开发</button>
+                <button data-filter="data">数据分析</button>
+                <button data-filter="ai">人工智能</button>
+                <button data-filter="tool">工具应用</button>
+            </div>
+        </div>
+        
+        <div class="projects-grid">
+            <div class="project-card" data-category="web">
+                <div class="project-image" style="background-image: url('https://via.placeholder.com/600x400');">
+                    <div class="project-links">
+                        <a href="#" class="demo-link"><i class="fas fa-external-link-alt"></i> 演示</a>
+                        <a href="#" class="code-link"><i class="fab fa-github"></i> 代码</a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h2>个人博客系统</h2>
+                    <p class="project-description">一个基于React和Node.js的全栈博客系统，支持Markdown编辑和用户评论功能。</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card" data-category="data">
+                <div class="project-image" style="background-image: url('https://via.placeholder.com/600x400');">
+                    <div class="project-links">
+                        <a href="#" class="demo-link"><i class="fas fa-external-link-alt"></i> 演示</a>
+                        <a href="#" class="code-link"><i class="fab fa-github"></i> 代码</a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h2>电商数据分析</h2>
+                    <p class="project-description">使用Python和Pandas对电商销售数据进行清洗、分析和可视化。</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Matplotlib</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card" data-category="ai">
+                <div class="project-image" style="background-image: url('https://via.placeholder.com/600x400');">
+                    <div class="project-links">
+                        <a href="#" class="demo-link"><i class="fas fa-external-link-alt"></i> 演示</a>
+                        <a href="#" class="code-link"><i class="fab fa-github"></i> 代码</a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h2>图像分类应用</h2>
+                    <p class="project-description">基于TensorFlow的深度学习模型，能够识别和分类不同种类的花卉图像。</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>Keras</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card" data-category="tool">
+                <div class="project-image" style="background-image: url('https://via.placeholder.com/600x400');">
+                    <div class="project-links">
+                        <a href="#" class="demo-link"><i class="fas fa-external-link-alt"></i> 演示</a>
+                        <a href="#" class="code-link"><i class="fab fa-github"></i> 代码</a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h2>任务管理工具</h2>
+                    <p class="project-description">一个简洁的任务管理应用，支持任务创建、分类和进度跟踪。</p>
+                    <div class="project-tech">
+                        <span>Vue.js</span>
+                        <span>Firebase</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card" data-category="web">
+                <div class="project-image" style="background-image: url('https://via.placeholder.com/600x400');">
+                    <div class="project-links">
+                        <a href="#" class="demo-link"><i class="fas fa-external-link-alt"></i> 演示</a>
+                        <a href="#" class="code-link"><i class="fab fa-github"></i> 代码</a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h2>在线商城</h2>
+                    <p class="project-description">一个完整的电子商务网站，包含商品展示、购物车和支付功能。</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Redux</span>
+                        <span>Node.js</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card" data-category="data">
+                <div class="project-image" style="background-image: url('https://via.placeholder.com/600x400');">
+                    <div class="project-links">
+                        <a href="#" class="demo-link"><i class="fas fa-external-link-alt"></i> 演示</a>
+                        <a href="#" class="code-link"><i class="fab fa-github"></i> 代码</a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h2>COVID-19数据可视化</h2>
+                    <p class="project-description">全球COVID-19疫情数据的可视化分析，使用D3.js创建交互式图表。</p>
+                    <div class="project-tech">
+                        <span>JavaScript</span>
+                        <span>D3.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>关于网站</h3>
+                <p>这是我的个人学习空间，记录了我的学习历程和技术分享。</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>快速链接</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> 首页</a></li>
+                    <li><a href="blog.html"><i class="fas fa-blog"></i> 博客</a></li>
+                    <li><a href="notes.html"><i class="fas fa-book"></i> 学习笔记</a></li>
+                    <li><a href="projects.html"><i class="fas fa-code"></i> 项目展示</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>联系我</h3>
+                <ul>
+                    <li><a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i> your.email@example.com</a></li>
+                    <li><a href="https://github.com/yourusername"><i class="fab fa-github"></i> GitHub</a></li>
+                    <li><a href="https://twitter.com/yourusername"><i class="fab fa-twitter"></i> Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 我的学习空间. 保留所有权利.</p>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+    <script src="js/projects-filter.js"></script>
+</body>
+</html>

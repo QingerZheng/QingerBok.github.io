@@ -3,106 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的学习博客</title>
-    <style>
-        body {
-            font-family: 'Microsoft YaHei', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        header {
-            background: #2c3e50;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background: #34495e;
-            padding: 0.5rem;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-        }
-        nav a:hover {
-            background: #2c3e50;
-        }
-        .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        .post {
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid #eee;
-        }
-        .post h2 {
-            color: #2c3e50;
-        }
-        .post-meta {
-            color: #7f8c8d;
-            font-size: 0.9rem;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background: #ecf0f1;
-            margin-top: 2rem;
-        }
-        
-        /* Dify Chatbot 自定义样式 */
-        #dify-chatbot-bubble-button {
-            background-color: #1C64F2 !important;
-        }
-        #dify-chatbot-bubble-window {
-            width: 24rem !important;
-            height: 40rem !important;
-        }
-    </style>
+    <title>我的学习空间 - 首页</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>我的学习笔记</h1>
+        <div class="logo">我的学习空间</div>
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html"><i class="fas fa-home"></i> 首页</a></li>
+                <li><a href="blog.html"><i class="fas fa-blog"></i> 博客</a></li>
+                <li><a href="notes.html"><i class="fas fa-book"></i> 学习笔记</a></li>
+                <li><a href="projects.html"><i class="fas fa-code"></i> 项目展示</a></li>
+                <li><a href="resources.html"><i class="fas fa-share-alt"></i> 资源分享</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> 关于我</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <a href="#">首页</a>
-        <a href="#">分类</a>
-        <a href="#">关于</a>
-    </nav>
-    <div class="container">
-        <article class="post">
-            <h2>JavaScript闭包学习笔记</h2>
-            <div class="post-meta">发布于: 2025-03-25 | 标签: JavaScript, 前端</div>
-            <p>闭包是JavaScript中一个重要的概念，它允许函数访问并操作函数外部的变量...</p>
-            <a href="#">阅读更多</a>
-        </article>
-        <article class="post">
-            <h2>CSS Flexbox布局指南</h2>
-            <div class="post-meta">发布于: 2025-03-20 | 标签: CSS, 前端</div>
-            <p>Flexbox是一种强大的CSS布局模式，它提供了更加有效的方式来布局、对齐和分配容器中项目的空间...</p>
-            <a href="#">阅读更多</a>
-        </article>
-    </div>
+    
+    <main>
+        <section class="hero">
+            <h1>欢迎来到我的学习空间</h1>
+            <p>记录学习历程，分享知识心得</p>
+            <div class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+        
+        <section class="about-me">
+            <h2><i class="fas fa-user"></i> 关于我</h2>
+            <div class="about-content">
+                <img src="https://via.placeholder.com/150" alt="头像" class="avatar">
+                <div class="about-text">
+                    <p>你好！我是一名热爱学习的技术爱好者，专注于前端开发、数据分析和人工智能领域。这个网站记录了我的学习历程和项目经验。</p>
+                    <p>我坚信持续学习和分享是成长的最佳方式，希望我的笔记和文章能对你有所帮助。</p>
+                    <a href="about.html" class="btn">了解更多 <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="recent-posts">
+            <h2><i class="fas fa-newspaper"></i> 最新文章</h2>
+            <div class="post-grid">
+                <article class="post-card">
+                    <div class="post-image" style="background-image: url('https://via.placeholder.com/300x200');"></div>
+                    <div class="post-content">
+                        <h3><a href="blog.html#post1">JavaScript ES6新特性详解</a></h3>
+                        <p class="meta"><i class="far fa-calendar-alt"></i> 2023-05-15 | <i class="far fa-folder"></i> 前端开发</p>
+                        <p>本文详细介绍了ES6中的箭头函数、解构赋值、模板字符串等新特性，并通过实例演示了如何使用这些功能提升开发效率...</p>
+                        <a href="blog.html#post1" class="read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="post-card">
+                    <div class="post-image" style="background-image: url('https://via.placeholder.com/300x200');"></div>
+                    <div class="post-content">
+                        <h3><a href="blog.html#post2">Python数据分析入门指南</a></h3>
+                        <p class="meta"><i class="far fa-calendar-alt"></i> 2023-05-10 | <i class="far fa-folder"></i> 数据分析</p>
+                        <p>从零开始学习使用Python进行数据分析，涵盖Pandas、NumPy等库的基本使用方法，以及如何清洗、分析和可视化数据...</p>
+                        <a href="blog.html#post2" class="read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="post-card">
+                    <div class="post-image" style="background-image: url('https://via.placeholder.com/300x200');"></div>
+                    <div class="post-content">
+                        <h3><a href="blog.html#post3">React Hooks 完全指南</a></h3>
+                        <p class="meta"><i class="far fa-calendar-alt"></i> 2023-05-05 | <i class="far fa-folder"></i> 前端开发</p>
+                        <p>深入探讨React Hooks的使用方法，包括useState、useEffect、useContext等核心Hook，以及如何创建自定义Hook...</p>
+                        <a href="blog.html#post3" class="read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+            <div class="center">
+                <a href="blog.html" class="btn">查看所有文章 <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+        
+        <section class="quick-links">
+            <h2><i class="fas fa-link"></i> 快速导航</h2>
+            <div class="link-grid">
+                <a href="notes.html" class="link-card">
+                    <i class="fas fa-book"></i>
+                    <h3>学习笔记</h3>
+                    <p>查看我的学习笔记和知识点总结</p>
+                </a>
+                
+                <a href="projects.html" class="link-card">
+                    <i class="fas fa-code"></i>
+                    <h3>项目展示</h3>
+                    <p>浏览我的个人项目和作品集</p>
+                </a>
+                
+                <a href="resources.html" class="link-card">
+                    <i class="fas fa-share-alt"></i>
+                    <h3>资源分享</h3>
+                    <p>获取我整理的学习资源和工具推荐</p>
+                </a>
+            </div>
+        </section>
+    </main>
+    
     <footer>
-        <p>© 2025 我的学习博客. 保留所有权利.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>关于网站</h3>
+                <p>这是我的个人学习空间，记录了我的学习历程和技术分享。</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>快速链接</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> 首页</a></li>
+                    <li><a href="blog.html"><i class="fas fa-blog"></i> 博客</a></li>
+                    <li><a href="notes.html"><i class="fas fa-book"></i> 学习笔记</a></li>
+                    <li><a href="projects.html"><i class="fas fa-code"></i> 项目展示</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>联系我</h3>
+                <ul>
+                    <li><a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i> your.email@example.com</a></li>
+                    <li><a href="https://github.com/yourusername"><i class="fab fa-github"></i> GitHub</a></li>
+                    <li><a href="https://twitter.com/yourusername"><i class="fab fa-twitter"></i> Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 我的学习空间. 保留所有权利.</p>
+        </div>
     </footer>
-
-    <!-- Dify Chatbot 代码 -->
-    <script>
-        window.difyChatbotConfig = {
-            token: 'ebBh3xD7ySmrprRb'
-        }
-    </script>
-    <script
-        src="https://udify.app/embed.min.js"
-        id="ebBh3xD7ySmrprRb"
-        defer>
-    </script>
+    
+    <script src="js/script.js"></script>
 </body>
 </html>

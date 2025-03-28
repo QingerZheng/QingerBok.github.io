@@ -159,11 +159,16 @@
        width: 24rem !important;
        height: 40rem !important;
      }
-     /* 隐藏 Dify 聊天机器人的 "Powered by" 栏 */
-     #dify-chatbot-bubble-window div[class*="system-2xs-medium-uppercase"],
-     #dify-chatbot-bubble-window img[alt="logo"] {
-        display: none !important;
-    }       
+  /* 隐藏整个底部容器（包括 "Powered by" 和 logo） */
+  #dify-chatbot-bubble-window div.h-full.min-w-\\[300px\\].pb-\\[env\\(safe-area-inset-bottom\\)\\] {
+    display: none !important;
+  }
+
+  /* 可选：调整聊天窗口样式 */
+  #dify-chatbot-bubble-window {
+    width: 24rem !important;
+    height: 38rem !important; /* 减少高度以适配隐藏的底部栏 */
+  }      
    </style>    
 </body>
 </html>

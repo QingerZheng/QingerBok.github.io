@@ -143,7 +143,17 @@
    <!-- Dify Chatbot Widget -->
    <script>
     window.difyChatbotConfig = {
-     token: 'ebBh3xD7ySmrprRb'
+    token: 'ebBh3xD7ySmrprRb',
+    isDev: true,
+    containerProps: {
+        style:{
+            '--dify-chat-button-bg-color': '#FFD700', // 气泡按钮
+            '--dify-chat-container-bg-color': '#FFFFE0', // 聊天框            
+        }
+    },
+    draggable: true,
+    
+
     }
    </script>
    <script
@@ -160,16 +170,6 @@
        height: 40rem !important;
        background-color: #f2e01c !important;
      }
-  /* 隐藏整个底部容器（包括 "Powered by" 和 logo） */
-  #dify-chatbot-bubble-window div.h-full.min-w-\\[300px\\].pb-\\[env\\(safe-area-inset-bottom\\)\\] {
-    display: none !important;
-  }
-
-  /* 可选：调整聊天窗口样式 */
-  #dify-chatbot-bubble-window {
-    width: 24rem !important;
-    height: 38rem !important; /* 减少高度以适配隐藏的底部栏 */
-  }      
-   </style>    
+   </style>
 </body>
 </html>

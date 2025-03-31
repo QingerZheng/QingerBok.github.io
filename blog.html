@@ -221,17 +221,30 @@ df.drop_duplicates(inplace=True)</code></pre>
     defer>
    </script>
    <style>
-     #dify-chatbot-bubble-button {
-       background-color: #f2e71c !important;
-     }
-     #dify-chatbot-bubble-window {
+    #dify-chatbot-bubble-button {
+        background-color: #f2e71c !important;
+    }
+    #dify-chatbot-bubble-window {
        width: 24rem !important;
        height: 20rem !important;
-     }
-  div[class*="flex"].h-14 {
-    background-image: linear-gradient(to right, red, orange) !important;
-  }
-
+       background-color: #f2e71c !important;
+    }
+    /* 修改消息输入框背景色 */
+    #dify-chatbot-bubble-window .dify-chat-input {
+        background-color: #f2e71c !important;
+    }
+    /* 修改用户消息气泡颜色 */
+    #dify-chatbot-bubble-window .dify-chat-message-user {
+        background-color: #f2e71c !important;
+    }
+    /* 修改机器人消息气泡颜色 */
+    #dify-chatbot-bubble-window .dify-chat-message-bot {
+        background-color: #f2e71c !important;
+    }
+    /* 修改按钮和强调色（如发送按钮、链接等） */
+    #dify-chatbot-bubble-window .dify-chat-send-button {
+        background-color: #f2e71c !important;
+    }
    </style>
 </body>
 </html>

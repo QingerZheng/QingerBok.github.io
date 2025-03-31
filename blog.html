@@ -210,44 +210,28 @@ df.drop_duplicates(inplace=True)</code></pre>
     <script src="js/tags.js"></script>
 
    <!-- Dify Chatbot Widget -->
-<script>
-  window.difyChatbotConfig = {
-    token: 'ebBh3xD7ySmrprRb'
-  }
-</script>
-<script src="https://udify.app/embed.min.js" id="ebBh3xD7ySmrprRb" defer></script>
-
-<style>
-  /* 方式1：直接覆盖内联样式（最高优先级） */
-  [style*="linear-gradient(to right, rgb(37, 99, 235), rgb(14, 165, 233)"] {
-    background-image: linear-gradient(to right, #FFD700, #FFC000) !important;
-  }
-
-  /* 方式2：通过属性选择器覆盖 */
-  [style*="background-image: linear-gradient"] {
-    background-image: linear-gradient(to right, #FFD700, #FFC000) !important;
-  }
-
-  /* 方式3：等待框架加载完成后强制修改 */
-  function forceUpdateStyles() {
-    const elements = document.querySelectorAll('.flex.h-14.items-center.justify-between.rounded-t-2xl');
-    elements.forEach(el => {
-      el.style.backgroundImage = 'linear-gradient(to right, #FFD700, #FFC000)';
-      el.querySelector('.system-md-semibold.truncate').style.color = '#333';
-    });
-  }
-
-  // 每500ms检查一次直到生效
-  const styleObserver = setInterval(() => {
-    if (document.querySelector('.flex.h-14')) {
-      forceUpdateStyles();
-      clearInterval(styleObserver);
+   <script>
+    window.difyChatbotConfig = {
+     token: 'ebBh3xD7ySmrprRb'
     }
-  }, 500);
+   </script>
+   <script
+    src="https://udify.app/embed.min.js"
+    id="ebBh3xD7ySmrprRb"
+    defer>
+   </script>
+   <style>
+     #dify-chatbot-bubble-button {
+       background-color: #f2e71c !important;
+     }
+     #dify-chatbot-bubble-window {
+       width: 24rem !important;
+       height: 20rem !important;
+     }
+  div[class*="flex"].h-14 {
+    background-image: linear-gradient(to right, red, orange) !important;
+  }
 
-  // 防抖处理
-  window.addEventListener('load', forceUpdateStyles);
-  document.addEventListener('DOMContentLoaded', forceUpdateStyles);
-</style>
+   </style>
 </body>
 </html>

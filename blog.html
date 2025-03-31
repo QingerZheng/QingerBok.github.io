@@ -229,6 +229,27 @@ df.drop_duplicates(inplace=True)</code></pre>
        height: 20rem !important;
        background-color: #f2e71c !important;
     }
+      /* 穿透 Shadow DOM 的写法（关键） */
+  #dify-chatbot-bubble-window::part(container) {
+    background-color: red !important; /* 测试用 */
+  }
+
+  /* 或者尝试通过属性选择器 */
+  #dify-chatbot-bubble-window [class*="chat-input"] {
+    background-color: #ffffff !important;
+  }
+
+  /* 用户消息气泡（可能需要实际类名） */
+  #dify-chatbot-bubble-window [class*="message-user"] {
+    background-color: #1C64F2 !important;
+    color: white !important;
+  }
+
+  /* 机器人消息气泡 */
+  #dify-chatbot-bubble-window [class*="message-bot"] {
+    background-color: #ffffff !important;
+    border: 1px solid #e5e7eb !important;
+  }
    </style>
 </body>
 </html>

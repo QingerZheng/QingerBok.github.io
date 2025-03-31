@@ -212,26 +212,42 @@ df.drop_duplicates(inplace=True)</code></pre>
    <!-- Dify Chatbot Widget -->
 <script>
   window.difyChatbotConfig = {
-    token: 'ebBh3xD7ySmrprRb'
+    token: 'ebBh3xD7ySmrprRb',
+    // 新增遮罩层配置
+    overlayConfig: {
+      backgroundColor: 'rgba(255, 253, 231, 0.8)' // 浅黄半透明遮罩
+    }
   }
 </script>
-<script
-  src="https://udify.app/embed.min.js"
-  id="ebBh3xD7ySmrprRb"
-  defer>
-</script>
+<script src="https://udify.app/embed.min.js" id="ebBh3xD7ySmrprRb" defer></script>
+
 <style>
+  /* 1. 修改初始蓝色按钮为黄色系 */
   #dify-chatbot-bubble-button {
-    background-color: #1C64F2 !important;
+    background-color: #FFC107 !important; /* 琥珀黄 */
+    box-shadow: 0 2px 8px rgba(255, 193, 7, 0.4) !important;
   }
+
+  /* 2. 修改遮罩层（原浅蓝半透明背景） */
+  .dify-chatbot-overlay {
+    background-color: rgba(255, 253, 231, 0.8) !important; /* 浅黄半透明 */
+  }
+
+  /* 3. 修改聊天主窗口（原白色部分） */
   #dify-chatbot-bubble-window {
-    width: 24rem !important;
-    height: 40rem !important;
-    background-image: linear-gradient(
-      to right, 
-      rgb(255, 245, 158),  /* 浅黄色 */
-      rgb(255, 215, 0)     /* 金色 */
-    ) !important;
+    background-color: #FFFDE7 !important; /* 浅鹅黄 */
+    border: 1px solid #FFD54F !important; /* 金丝雀黄边框 */
+  }
+
+  /* 4. 修改消息气泡（保持专业感） */
+  .dify-chat-message-bot {
+    background-color: #FFF9C4 !important; /* 浅黄气泡 */
+    border-left: 3px solid #FFCA28 !important; /* 左侧装饰条 */
+  }
+  
+  /* 5. 隐藏底部版权信息 */
+  .dify-chatbot-powered-by {
+    display: none !important;
   }
 </style>
 </body>

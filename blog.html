@@ -212,42 +212,26 @@ df.drop_duplicates(inplace=True)</code></pre>
    <!-- Dify Chatbot Widget -->
 <script>
   window.difyChatbotConfig = {
-    token: 'ebBh3xD7ySmrprRb',
-    containerProps: {
-      style: {
-        '--dify-chat-message-bg-user': '#FFF8C9',    // 用户消息气泡（浅黄）
-        '--dify-chat-message-bg-bot': '#FFF8C9',     // 机器人消息气泡（浅黄）
-        '--dify-chat-input-bg': '#FFFFE0',           // 输入框背景（浅黄）
-        '--dify-chat-container-bg': '#FFFFE0'       // 页面主体背景（浅黄）
-      }
-    },
-    draggable: true
-  };
+    token: 'ebBh3xD7ySmrprRb'
+  }
 </script>
-
-<script 
-  src="https://udify.app/embed.min.js" 
-  id="ebBh3xD7ySmrprRb" 
+<script
+  src="https://udify.app/embed.min.js"
+  id="ebBh3xD7ySmrprRb"
   defer>
 </script>
-
 <style>
-  /* 强制覆盖所有黄色区域 */
+  #dify-chatbot-bubble-button {
+    background-color: #1C64F2 !important;
+  }
   #dify-chatbot-bubble-window {
-    background-color: #FFFFE0 !important;  /* 聊天框外框 */
-  }
-  /* 消息气泡 */
-  .chat-message-bubble {
-    background-color: #FFF8C9 !important;  /* 消息气泡（更亮的黄） */
-  }
-  /* 输入框 */
-  .chat-input-container {
-    background-color: #FFFFE0 !important;
-  }
-  /* 隐藏 Powered by 栏 */
-  #dify-chatbot-bubble-window div[class*="powered-by"],
-  #dify-chatbot-bubble-window img[alt="logo"] {
-    display: none !important;
+    width: 24rem !important;
+    height: 40rem !important;
+    background-image: linear-gradient(
+      to right, 
+      rgb(255, 245, 158),  /* 浅黄色 */
+      rgb(255, 215, 0)     /* 金色 */
+    ) !important;
   }
 </style>
 </body>

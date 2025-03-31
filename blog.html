@@ -213,12 +213,13 @@ df.drop_duplicates(inplace=True)</code></pre>
 <script>
   window.difyChatbotConfig = {
     token: 'ebBh3xD7ySmrprRb',
+    isDev: true,
     containerProps: {
       style: {
-        '--dify-chat-button-bg-color': '#FFD700',      // 气泡按钮颜色（金色）
-        '--dify-chat-container-bg-color': '#FFFFE0',  // 聊天框背景色（浅黄）
-        '--dify-chat-bubble-width': '24rem',          // 聊天框宽度
-        '--dify-chat-bubble-height': '40rem'          // 聊天框高度
+        '--dify-chat-message-bg-user': '#FFF8C9',    // 用户消息气泡（浅黄）
+        '--dify-chat-message-bg-bot': '#FFF8C9',     // 机器人消息气泡（浅黄）
+        '--dify-chat-input-bg': '#FFFFE0',           // 输入框背景（浅黄）
+        '--dify-chat-container-bg': '#FFFFE0'       // 页面主体背景（浅黄）
       }
     },
     draggable: true
@@ -232,27 +233,22 @@ df.drop_duplicates(inplace=True)</code></pre>
 </script>
 
 <style>
-  /* 强制覆盖按钮和聊天框样式 */
-  #dify-chatbot-bubble-button {
-    background-color: #FFD700 !important;  /* 按钮颜色（与CSS变量一致） */
-  }
+  /* 强制覆盖所有黄色区域 */
   #dify-chatbot-bubble-window {
-    width: 24rem !important;
-    height: 40rem !important;
-    background-color: #FFFFE0 !important;  /* 聊天框背景色 */
+    background-color: #FFFFE0 !important;  /* 聊天框外框 */
   }
-
+  /* 消息气泡 */
+  .chat-message-bubble {
+    background-color: #FFF8C9 !important;  /* 消息气泡（更亮的黄） */
+  }
+  /* 输入框 */
+  .chat-input-container {
+    background-color: #FFFFE0 !important;
+  }
   /* 隐藏 Powered by 栏 */
-  #dify-chatbot-bubble-window div[class*="system-2xs-medium-uppercase"],
-  #dify-chatbot-bubble-window img[alt="logo"],
-  #dify-chatbot-bubble-window a[href*="dify"] {
+  #dify-chatbot-bubble-window div[class*="powered-by"],
+  #dify-chatbot-bubble-window img[alt="logo"] {
     display: none !important;
-  }
-
-  /* 可选：调整聊天框圆角和阴影 */
-  #dify-chatbot-bubble-window {
-    border-radius: 12px !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
   }
 </style>
 </body>

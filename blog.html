@@ -213,53 +213,29 @@ df.drop_duplicates(inplace=True)</code></pre>
 <script>
     window.difyChatbotConfig = {
         token: 'ebBh3xD7ySmrprRb'
-    }
+    };
+
+    // 等待页面加载完成后执行
+    window.addEventListener('load', function () {
+        // 查找要修改的 div 元素
+        var targetDiv = document.querySelector('.flex.h-14.shrink-0.items-center.justify-between.rounded-t-2xl.px-3');
+
+        // 如果找到该元素，则修改其背景渐变
+        if (targetDiv) {
+            targetDiv.style.backgroundImage = 'linear-gradient(to right, rgb(255, 255, 0), rgb(255, 255, 0))';
+        }
+    });
 </script>
 <script src="https://udify.app/embed.min.js" id="ebBh3xD7ySmrprRb" defer=""></script>
-
 <style>
     #dify-chatbot-bubble-button {
-        background-color: #1C64F2 !important;
+        background-color: #f2c01c !important;
     }
     #dify-chatbot-bubble-window {
         width: 24rem !important;
         height: 40rem !important;
-        position: relative;
-    }
-
-    /* 方案 1：尝试覆盖标题（如果iframe内部允许） */
-    #dify-chatbot-bubble-window::before {
-        content: "新的标题"; /* 这里写你的新标题 */
-        display: block;
-        font-size: 16px;
-        font-weight: bold;
-        color: black;
-        text-align: center;
-        padding: 10px;
-        background: white;
-    }
-
-    /* 方案 2：遮挡 iframe 原来的标题 */
-    #dify-chatbot-bubble-window::after {
-        content: "新的标题";
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        font-size: 16px;
-        font-weight: bold;
-        color: white;
-        background-color: black;
-        padding: 5px 10px;
-        z-index: 9999;
     }
 </style>
-
-<script>
-    // 方案 3：尝试用 JavaScript 修改页面标题（可能受同源策略限制）
-    document.getElementById('dify-chatbot-bubble-window')?.addEventListener("load", function() {
-        document.title = "你的新标题"; // 修改整个页面的标题
-    });
-</script>
 
 </body>
 </html>

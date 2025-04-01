@@ -217,19 +217,25 @@ df.drop_duplicates(inplace=True)</code></pre>
 
     // 等待页面加载完成后执行
     window.addEventListener('load', function () {
-        // 查找要修改的 div 元素
-        var targetDiv = document.querySelector('.flex.h-14.shrink-0.items-center.justify-between.rounded-t-2xl.px-3');
-
-        // 如果找到该元素，则修改其背景渐变
+        // 获取所有包含背景样式的 div 元素
+        var allDivs = document.querySelectorAll('div[style*="background-image"]');
+        
+        // 获取目标元素（第二个 div 元素，索引从 0 开始）
+        var targetDiv = allDivs[1];  
+        
         if (targetDiv) {
-            targetDiv.style.backgroundImage = 'linear-gradient(to right, rgb(255, 255, 0), rgb(255, 255, 0))';
+            // 修改背景样式
+            targetDiv.style.backgroundImage = 'linear-gradient(to right, rgb(255, 223, 0), rgb(255, 85, 0))';  // 改为黄色和橙色的渐变
+            console.log('修改后的背景样式:', targetDiv.style.backgroundImage);  // 打印修改后的背景样式
+        } else {
+            console.log('没有找到目标元素');
         }
     });
 </script>
 <script src="https://udify.app/embed.min.js" id="ebBh3xD7ySmrprRb" defer=""></script>
 <style>
     #dify-chatbot-bubble-button {
-        background-color: #f2c01c !important;
+        background-color: #1C64F2 !important;
     }
     #dify-chatbot-bubble-window {
         width: 24rem !important;

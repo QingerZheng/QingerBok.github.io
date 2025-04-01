@@ -209,47 +209,57 @@ df.drop_duplicates(inplace=True)</code></pre>
     <script src="js/search.js"></script>
     <script src="js/tags.js"></script>
 
-   <!-- Dify Chatbot Widget -->
-   <script>
+<!-- Dify Chatbot Widget -->
+<script>
     window.difyChatbotConfig = {
-     token: 'ebBh3xD7ySmrprRb'
+        token: 'ebBh3xD7ySmrprRb'
     }
-   </script>
-   <script
-    src="https://udify.app/embed.min.js"
-    id="ebBh3xD7ySmrprRb"
-    defer>
-   </script>
-   <style>
+</script>
+<script src="https://udify.app/embed.min.js" id="ebBh3xD7ySmrprRb" defer=""></script>
+
+<style>
     #dify-chatbot-bubble-button {
-        background-color: #f2e71c !important;
+        background-color: #1C64F2 !important;
     }
     #dify-chatbot-bubble-window {
-       width: 24rem !important;
-       height: 20rem !important;
-       background-color: #f2e71c !important;
+        width: 24rem !important;
+        height: 40rem !important;
+        position: relative;
     }
-      /* 穿透 Shadow DOM 的写法（关键） */
-  #dify-chatbot-bubble-window::part(container) {
-    background-color: red !important; /* 测试用 */
-  }
 
-  /* 或者尝试通过属性选择器 */
-  #dify-chatbot-bubble-window [class*="chat-input"] {
-    background-color: #ffffff !important;
-  }
+    /* 方案 1：尝试覆盖标题（如果iframe内部允许） */
+    #dify-chatbot-bubble-window::before {
+        content: "新的标题"; /* 这里写你的新标题 */
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+        color: black;
+        text-align: center;
+        padding: 10px;
+        background: white;
+    }
 
-  /* 用户消息气泡（可能需要实际类名） */
-  #dify-chatbot-bubble-window [class*="message-user"] {
-    background-color: #1C64F2 !important;
-    color: white !important;
-  }
+    /* 方案 2：遮挡 iframe 原来的标题 */
+    #dify-chatbot-bubble-window::after {
+        content: "新的标题";
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        background-color: black;
+        padding: 5px 10px;
+        z-index: 9999;
+    }
+</style>
 
-  /* 机器人消息气泡 */
-  #dify-chatbot-bubble-window [class*="message-bot"] {
-    background-color: #ffffff !important;
-    border: 1px solid #e5e7eb !important;
-  }
-   </style>
+<script>
+    // 方案 3：尝试用 JavaScript 修改页面标题（可能受同源策略限制）
+    document.getElementById('dify-chatbot-bubble-window')?.addEventListener("load", function() {
+        document.title = "你的新标题"; // 修改整个页面的标题
+    });
+</script>
+
 </body>
 </html>

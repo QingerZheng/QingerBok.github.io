@@ -210,38 +210,32 @@ df.drop_duplicates(inplace=True)</code></pre>
     <script src="js/tags.js"></script>
 
 <!-- Dify Chatbot Widget -->
-<script>
+ <script>
     window.difyChatbotConfig = {
-        token: 'ebBh3xD7ySmrprRb'
-    };
-
-    // 等待页面加载完成后执行
-    window.addEventListener('load', function () {
-        // 获取所有包含背景样式的 div 元素
-        var allDivs = document.querySelectorAll('div[style*="background-image"]');
-        
-        // 获取目标元素（第二个 div 元素，索引从 0 开始）
-        var targetDiv = allDivs[1];  
-        
-        if (targetDiv) {
-            // 修改背景样式
-            targetDiv.style.backgroundImage = 'linear-gradient(to right, rgb(255, 223, 0), rgb(255, 85, 0))';  // 改为黄色和橙色的渐变
-            console.log('修改后的背景样式:', targetDiv.style.backgroundImage);  // 打印修改后的背景样式
-        } else {
-            console.log('没有找到目标元素');
-        }
-    });
+     token: 'ebBh3xD7ySmrprRb'
+    }
 </script>
 <script src="https://udify.app/embed.min.js" id="ebBh3xD7ySmrprRb" defer=""></script>
 <style>
     #dify-chatbot-bubble-button {
-        background-color: #1C64F2 !important;
+      background-color: #1C64F2 !important;
     }
     #dify-chatbot-bubble-window {
-        width: 24rem !important;
-        height: 40rem !important;
+      width: 24rem !important;
+      height: 40rem !important;
     }
 </style>
+
+<!-- 自定义的 JavaScript 样式修改 -->
+<script>
+  const style = document.createElement('style');
+  style.innerHTML = `
+    .flex.h-14.shrink-0.items-center.justify-between.rounded-t-2xl.px-3 {
+      background-image: linear-gradient(to right, rgb(50, 110, 235), rgb(14, 2, 233)) !important;
+    }
+  `;
+  document.head.appendChild(style);
+</script>
 
 </body>
 </html>

@@ -210,32 +210,37 @@ df.drop_duplicates(inplace=True)</code></pre>
     <script src="js/tags.js"></script>
 
 <!-- Dify Chatbot Widget -->
-<meta http-equiv="Content-Security-Policy" content="script-src 'self' *.dify.dev *.udify.app;">
- <script>
+<script>
     window.difyChatbotConfig = {
-     token: 'ebBh3xD7ySmrprRb'
-    }
+        token: 'ebBh3xD7ySmrprRb'
+    };
 </script>
-<script src="https://udify.app/embed.min.js" id="ebBh3xD7ySmrprRb" defer=""></script>
+
+<!-- Dify 脚本 -->
+<script src="https://udify.app/embed.min.js" id="ebBh3xD7ySmrprRb" defer></script>
+
+<!-- 自定义样式 -->
 <style>
     #dify-chatbot-bubble-button {
-      background-color: #1C64F2 !important;
+        background-color: #1C64F2 !important;
     }
     #dify-chatbot-bubble-window {
-      width: 24rem !important;
-      height: 40rem !important;
+        width: 24rem !important;
+        height: 40rem !important;
     }
 </style>
 
-<!-- 自定义的 JavaScript 样式修改 -->
+<!-- 自定义 JavaScript -->
 <script>
-  const style = document.createElement('style');
-  style.innerHTML = `
-    .flex.h-14.shrink-0.items-center.justify-between.rounded-t-2xl.px-3 {
-      background-image: linear-gradient(to right, rgb(50, 110, 235), rgb(14, 2, 233)) !important;
-    }
-  `;
-  document.head.appendChild(style);
+    setTimeout(function() {
+        var chatWindow = document.querySelector(".flex.h-14.shrink-0.items-center.justify-between.rounded-t-2xl.px-3");
+        if (chatWindow) {
+            chatWindow.style.backgroundImage = "linear-gradient(to right, rgb(255, 255, 7), rgb(255, 255, 0))";
+            console.log("✅ Chatbot 背景修改成功！");
+        } else {
+            console.log("❌ Chatbot 组件未找到，可能是加载延迟导致的。");
+        }
+    }, 3000); // 延迟 3 秒，等待 Chatbot 加载完成
 </script>
 
 </body>

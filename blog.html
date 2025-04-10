@@ -209,35 +209,34 @@ df.drop_duplicates(inplace=True)</code></pre>
     <script src="js/search.js"></script>
     <script src="js/tags.js"></script>
 
-<!-- Dify Chatbot Widget -->
 <script>
-    window.difyChatbotConfig = {
-        token: 'ebBh3xD7ySmrprRb'
-    };
+  window.difyChatbotConfig = {
+    token: 'IMwGAq828Tnwo5gY',
+    systemVariables: {
+      // user_id: 'YOU CAN DEFINE USER ID HERE',
+    },
+  }
 </script>
-
-<!-- Dify 脚本 -->
-<script src="https://udify.app/embed.min.js" id="ebBh3xD7ySmrprRb" defer></script>
-
-<!-- 自定义样式 -->
+<script
+  src="https://udify.app/embed.min.js"
+  id="IMwGAq828Tnwo5gY"
+  defer>
+</script>
 <style>
-    #dify-chatbot-bubble-button {
-        background-color: #1C64F2 !important;
-    }
-    #dify-chatbot-bubble-window {
-        width: 24rem !important;
-        height: 40rem !important;
-    }
+  #dify-chatbot-bubble-button {
+    background-color: #333333 !important;
+    position: fixed !important; /* 固定位置 */
+    bottom: 20px !important;   /* 距离底部20px */
+    right: 20px !important;    /* 距离右侧20px */
+  }
+  #dify-chatbot-bubble-window {
+    width: 24rem !important;
+    height: 40rem !important;
+    position: fixed !important; /* 固定位置 */
+    bottom: 20px !important;   /* 调整窗口位置 */
+    right: 20px !important;    /* 调整窗口位置 */
+  }
 </style>
-
-<!-- 自定义 JavaScript -->
-<script>
-    var script = document.createElement("script");
-    script.src = "https://qingerzheng.com/js/chatbot-style.js";  // 替换为你自己的文件路径
-    script.type = "text/javascript";
-    document.body.appendChild(script);
-</script>
-
 
 
 </body>
